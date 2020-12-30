@@ -1,0 +1,50 @@
+@import "./reset.scss";
+
+$dark-gray-blue: hsl(217, 19%, 35%);
+$dark-blue: hsl(214, 17%, 51%);
+$gray-blue: hsl(212, 23%, 69%);
+$light-gray-blue: hsl(210, 46%, 95%);
+
+html {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $gray-blue;
+}
+
+.preview {
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  &-picture {
+    height: 40%;
+    width: 100%;
+    img {
+      object-fit: cover;
+      object-position: 0 -15px;
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+      height: 207px;
+    }
+  }
+  &-body {
+    padding: 20px 40px;
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+  &-footer {
+    padding: 20px 40px;
+    display: flex;
+    height: 20%;
+    &-avatar {
+      height: 100%;
+    }
+  }
+}
