@@ -14,13 +14,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $gray-blue;
+  background-color: $light-gray-blue;
 }
 
 .preview {
+  align-self: center;
   width: 90%;
+  margin-top: 70px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0px 20px 50px 2px $gray-blue;
   &-picture {
     height: 40%;
     width: 100%;
@@ -37,14 +40,44 @@ body {
     h1 {
       font-size: 1.2rem;
       font-weight: 700;
+      color: $dark-gray-blue;
     }
   }
   &-footer {
-    padding: 20px 40px;
+    padding: 0px 40px 5px;
     display: flex;
-    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
     &-avatar {
-      height: 100%;
+      height: 60%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    &-description {
+      margin: 0 15px 0 -15px;
+      &-name {
+        font-weight: 700;
+      }
+      &-date {
+        color: $gray-blue;
+        padding-top: 3px;
+      }
+    }
+    &-button {
+      background-color: $light-gray-blue;
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        object-fit: contain;
+      }
+    }
+    &-share-menu {
+      display: none;
     }
   }
 }

@@ -25,13 +25,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #9eafc2;
+  background-color: #ecf2f8;
 }
 
 .preview {
+  align-self: center;
   width: 90%;
+  margin-top: 70px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0px 20px 50px 2px #9eafc2;
 }
 .preview-picture {
   height: 40%;
@@ -50,14 +53,44 @@ body {
 .preview-body h1 {
   font-size: 1.2rem;
   font-weight: 700;
+  color: #48556a;
 }
 .preview-footer {
-  padding: 20px 40px;
+  padding: 0px 40px 5px;
   display: flex;
-  height: 20%;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
 }
 .preview-footer-avatar {
-  height: 100%;
+  height: 60%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.preview-footer-description {
+  margin: 0 15px 0 -15px;
+}
+.preview-footer-description-name {
+  font-weight: 700;
+}
+.preview-footer-description-date {
+  color: #9eafc2;
+  padding-top: 3px;
+}
+.preview-footer-button {
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview-footer-button img {
+  object-fit: contain;
+}
+.preview-footer-share-menu {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
