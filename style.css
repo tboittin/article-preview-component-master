@@ -48,36 +48,43 @@ body {
   height: 207px;
 }
 .preview-body {
-  padding: 20px 40px;
+  padding: 20px 41px;
 }
 .preview-body h1 {
   font-size: 1.2rem;
   font-weight: 700;
   color: #48556a;
 }
+.preview-body p {
+  color: #9eafc2;
+}
 .preview-footer {
-  padding: 0px 40px 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 80px;
 }
-.preview-footer-avatar {
+.preview-footer-inactive {
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 40px 5px;
+}
+.preview-footer-inactive-avatar {
   height: 60%;
   object-fit: contain;
   border-radius: 50%;
 }
-.preview-footer-description {
+.preview-footer-inactive-description {
   margin: 0 15px 0 -15px;
 }
-.preview-footer-description-name {
+.preview-footer-inactive-description-name {
   font-weight: 700;
+  color: #48556a;
 }
-.preview-footer-description-date {
+.preview-footer-inactive-description-date {
   color: #9eafc2;
   padding-top: 3px;
 }
-.preview-footer-button {
+.preview-footer-inactive-button {
   background-color: #ecf2f8;
   border-radius: 50%;
   height: 35px;
@@ -86,11 +93,61 @@ body {
   align-items: center;
   justify-content: center;
 }
-.preview-footer-button img {
+.preview-footer-inactive-button img {
   object-fit: contain;
 }
-.preview-footer-share-menu {
-  display: none;
+.preview-footer-active {
+  display: block;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #48556a;
+  border-radius: 0 0 10px 10px;
+}
+.preview-footer-active-menu {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 40px;
+  align-items: center;
+}
+.preview-footer-active-menu-logo {
+  text-transform: uppercase;
+  color: #9eafc2;
+  letter-spacing: 5px;
+}
+.preview-footer-active-menu-social-network {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -30px;
+}
+.preview-footer-active-menu-social-network li {
+  cursor: pointer;
+  margin: 0 10px;
+}
+.preview-footer-active-menu-share {
+  background-color: #6d7f97;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview-footer-active-menu-share img {
+  filter: brightness(255%);
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+
+  .preview {
+    width: 50%;
+    margin-left: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -36,48 +36,110 @@ body {
     }
   }
   &-body {
-    padding: 20px 40px;
+    padding: 20px 41px;
     h1 {
       font-size: 1.2rem;
       font-weight: 700;
       color: $dark-gray-blue;
     }
+    p {
+      color: $gray-blue;
+    }
   }
   &-footer {
-    padding: 0px 40px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 80px;
-    &-avatar {
-      height: 60%;
-      object-fit: contain;
-      border-radius: 50%;
-    }
-    &-description {
-      margin: 0 15px 0 -15px;
-      &-name {
-        font-weight: 700;
-      }
-      &-date {
-        color: $gray-blue;
-        padding-top: 3px;
-      }
-    }
-    &-button {
-      background-color: $light-gray-blue;
-      border-radius: 50%;
-      height: 35px;
-      width: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      img {
-        object-fit: contain;
-      }
-    }
-    &-share-menu {
+    &-inactive {
+      height: 100%;
+      // display: flex;
       display: none;
+      align-items: center;
+      justify-content: space-between;
+
+      margin: 0px 40px 5px;
+      &-avatar {
+        height: 60%;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+      &-description {
+        margin: 0 15px 0 -15px;
+        &-name {
+          font-weight: 700;
+          color: $dark-gray-blue;
+        }
+        &-date {
+          color: $gray-blue;
+          padding-top: 3px;
+        }
+      }
+      &-button {
+        background-color: $light-gray-blue;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+    &-active {
+      // display: none;
+      display: block;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $dark-gray-blue;
+      border-radius: 0 0 10px 10px;
+      &-menu {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        margin: 0 40px;
+        align-items: center;
+        &-logo {
+          text-transform: uppercase;
+          color: $gray-blue;
+          letter-spacing: 5px;
+        }
+        &-social-network {
+          display: flex;
+          justify-content: space-between;
+          margin-left: -30px;
+          li {
+            cursor: pointer;
+            margin: 0 10px;
+          }
+        }
+        &-share {
+          background-color: $dark-blue;
+          border-radius: 50%;
+          height: 35px;
+          width: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            filter: brightness(255%);
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
+}
+
+@media (min-width:1440px) {
+
+  body {
+    height: 100vh;
+  }
+
+  .preview {
+    width: 50%;
+    margin-left: 20%;
+  }
+
 }
