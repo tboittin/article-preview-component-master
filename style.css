@@ -96,6 +96,9 @@ body {
 .preview-footer-inactive-button img {
   object-fit: contain;
 }
+.preview-footer-inactive-button-tooltip {
+  display: none;
+}
 .preview-footer-active {
   display: none;
   height: 100%;
@@ -138,9 +141,6 @@ body {
   filter: brightness(255%);
   cursor: pointer;
 }
-.preview-footer-tooltip {
-  display: none;
-}
 
 @media (min-width: 1440px) {
   body {
@@ -179,10 +179,11 @@ body {
   .preview-footer-inactive-description {
     margin-left: -125px;
   }
-  .preview-footer-inactive-button img {
+  .preview-footer-inactive-button {
     cursor: pointer;
   }
   .preview-footer-inactive-button-tooltip {
+    display: none;
     position: absolute;
     background-color: #48556a;
     width: 200px;
