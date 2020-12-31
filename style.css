@@ -63,7 +63,7 @@ body {
 }
 .preview-footer-inactive {
   height: 100%;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0px 40px 5px;
@@ -97,7 +97,7 @@ body {
   object-fit: contain;
 }
 .preview-footer-active {
-  display: block;
+  display: none;
   height: 100%;
   align-items: center;
   justify-content: space-between;
@@ -138,6 +138,9 @@ body {
   filter: brightness(255%);
   cursor: pointer;
 }
+.preview-footer-tooltip {
+  display: none;
+}
 
 @media (min-width: 1440px) {
   body {
@@ -145,8 +148,79 @@ body {
   }
 
   .preview {
-    width: 50%;
-    margin-left: 20%;
+    width: 720px;
+    height: 270px;
+    margin-top: 0;
+    display: flex;
+  }
+  .preview-left {
+    height: 100%;
+  }
+  .preview-left .preview-picture {
+    height: 270px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .preview-left .preview-picture img {
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: 0px 0px;
+    height: 100%;
+  }
+  .preview-body {
+    height: 60%;
+    padding: 25px 40px 0px 40px;
+  }
+  .preview-body h1 {
+    font-size: 1.5rem;
+  }
+  .preview-footer {
+    height: 25%;
+  }
+  .preview-footer-inactive-description {
+    margin-left: -125px;
+  }
+  .preview-footer-inactive-button img {
+    cursor: pointer;
+  }
+  .preview-footer-inactive-button-tooltip {
+    position: absolute;
+    background-color: #48556a;
+    width: 200px;
+    margin-bottom: 120px;
+    padding: 15px 30px;
+    border-radius: 10px;
+  }
+  .preview-footer-inactive-button-tooltip-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+  }
+  .preview-footer-inactive-button-tooltip-menu-logo {
+    text-transform: uppercase;
+    color: #9eafc2;
+    letter-spacing: 5px;
+    font-size: 1.1rem;
+    margin-left: 12px;
+    margin-bottom: 3px;
+  }
+  .preview-footer-inactive-button-tooltip-menu-social-network {
+    display: inherit;
+  }
+  .preview-footer-inactive-button-tooltip-menu-social-network li {
+    margin: 0 7px;
+  }
+  .preview-footer-inactive-button-tooltip::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 12px;
+    border-color: #48556a transparent transparent transparent;
+    top: 60px;
+    left: 117px;
+  }
+  .preview-footer-active {
+    display: none;
   }
 }
 
