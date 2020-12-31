@@ -9,7 +9,7 @@ let tooltip = document.getElementsByClassName(
 let previewPicture = document.getElementsByClassName("preview-picture")[0];
 let previewBody = document.getElementsByClassName("preview-body")[0];
 
-let transitionWidth = 1440;
+let transitionWidth = 800;
 
 const openShareMobile = () => {
   inactiveFooter.style.display = "none";
