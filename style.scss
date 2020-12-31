@@ -19,6 +19,7 @@ body {
 
 .preview {
   align-self: center;
+  max-width: 335px;
   width: 90%;
   margin-top: 70px;
   background-color: white;
@@ -132,13 +133,13 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 800px) {
   body {
     height: 100vh;
   }
 
   .preview {
-    width: 720px;
+    max-width: 720px;
     height: 270px;
     margin-top: 0;
     display: flex;
